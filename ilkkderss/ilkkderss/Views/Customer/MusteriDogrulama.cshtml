@@ -1,0 +1,41 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+
+@model ilkkderss.Models.Customer
+
+@*Controller tarafında tanımladıgımız viewbagi burada karşılıyorum...*@
+@ViewBag.HataMesaj
+
+
+<form asp-action="MusteriDogrulama" asp-controller="Customer" method="post">
+
+     
+<style>
+    #box {
+        
+        text-align: center;
+       
+    }
+</style>
+   
+     <div id="box"> 
+
+    <input type="text" name="CustomerName" placeholder="Name" />
+
+    </br>
+
+    <input type="text" name="CustomerSurname" placeholder="Surname" />
+
+    </br> 
+    
+    
+    <input type="email" name="Email" placeholder="Email" />
+
+    </br>
+
+
+    </br>
+
+    <button >ADD CUSTOMER</button>
+
+     </div>
+</form>
